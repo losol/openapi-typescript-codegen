@@ -1,15 +1,13 @@
 # OpenAPI Typescript Codegen
 
-[![NPM][npm-image]][npm-url]
-[![License][license-image]][license-url]
-[![Coverage][coverage-image]][coverage-url]
-[![Coverage][coverage-image]][coverage-url]
-[![Downloads][downloads-image]][downloads-url]
-[![Build][build-image]][build-url]
+**This is a fork of [ferdikoomen/openapi-typescript-codegen](https://github.com/ferdikoomen/openapi-typescript-codegen) only to deploy a new version with a bugfix to npm.**
+
+To publish a new package: check version number in package.json, run the scripts. Then: `npm login --scope @losol --auth-type web` and then `npm publish --access public`
 
 > Node.js library that generates Typescript clients based on the OpenAPI specification.
 
 ## Why?
+
 - Frontend ❤️ OpenAPI, but we do not want to use JAVA codegen in our builds
 - Quick, lightweight, robust and framework-agnostic 🚀
 - Supports generation of TypeScript clients
@@ -74,6 +72,7 @@ docker run openapi-typescript-codegen --input sample.yaml --output client
 
 Documentation
 ===
+
 - [Basic usage](docs/basic-usage.md)
 - [OpenAPI object](docs/openapi-object.md)
 - [Client instances](docs/client-instances.md) `--name`
@@ -89,18 +88,8 @@ Documentation
 
 Support
 ===
+
 - [Babel support](docs/babel-support.md)
 - [Axios support](docs/axios-support.md)
 - [Angular support](docs/angular-support.md)
 - [Node-Fetch support](docs/node-fetch-support.md)
-
-[npm-url]: https://npmjs.org/package/openapi-typescript-codegen
-[npm-image]: https://img.shields.io/npm/v/openapi-typescript-codegen.svg
-[license-url]: LICENSE
-[license-image]: http://img.shields.io/npm/l/openapi-typescript-codegen.svg
-[coverage-url]: https://codecov.io/gh/ferdikoomen/openapi-typescript-codegen
-[coverage-image]: https://img.shields.io/codecov/c/github/ferdikoomen/openapi-typescript-codegen.svg
-[downloads-url]: http://npm-stat.com/charts.html?package=openapi-typescript-codegen
-[downloads-image]: http://img.shields.io/npm/dm/openapi-typescript-codegen.svg
-[build-url]: https://circleci.com/gh/ferdikoomen/openapi-typescript-codegen/tree/master
-[build-image]: https://circleci.com/gh/ferdikoomen/openapi-typescript-codegen/tree/master.svg?style=svg
